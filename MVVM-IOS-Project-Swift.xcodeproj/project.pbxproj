@@ -6,14 +6,62 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		83B2A7092EA6321500ACE935 /* MVVM_IOS_Project_SwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B2A7082EA6321500ACE935 /* MVVM_IOS_Project_SwiftApp.swift */; };
+		83B2A70B2EA6321500ACE935 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B2A70A2EA6321500ACE935 /* ContentView.swift */; };
+		83B2A70D2EA6321600ACE935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B2A70C2EA6321600ACE935 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		83B2A7052EA6321500ACE935 /* MVVM-IOS-Project-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-IOS-Project-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B2A7082EA6321500ACE935 /* MVVM_IOS_Project_SwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_IOS_Project_SwiftApp.swift; sourceTree = "<group>"; };
+		83B2A70A2EA6321500ACE935 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		83B2A70C2EA6321600ACE935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		83B2A7672EA63B8900ACE935 /* Exceptions for "Views" folder in "MVVM-IOS-Project-Swift" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				HistoryView.swift,
+			);
+			target = 83B2A7042EA6321500ACE935 /* MVVM-IOS-Project-Swift */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		83B2A7682EA63B8900ACE935 /* Exceptions for "Views" folder in "Copy Bundle Resources" phase from "MVVM-IOS-Project-Swift" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 83B2A7032EA6321500ACE935 /* Resources */;
+			membershipExceptions = (
+				HistoryView.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		83B2A7072EA6321500ACE935 /* MVVM-IOS-Project-Swift */ = {
+		83B2A7452EA6353300ACE935 /* Models */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "MVVM-IOS-Project-Swift";
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83B2A7492EA6358900ACE935 /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		83B2A7512EA6365B00ACE935 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		83B2A7552EA6370500ACE935 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				83B2A7672EA63B8900ACE935 /* Exceptions for "Views" folder in "MVVM-IOS-Project-Swift" target */,
+				83B2A7682EA63B8900ACE935 /* Exceptions for "Views" folder in "Copy Bundle Resources" phase from "MVVM-IOS-Project-Swift" target */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +80,13 @@
 		83B2A6FC2EA6321500ACE935 = {
 			isa = PBXGroup;
 			children = (
-				83B2A7072EA6321500ACE935 /* MVVM-IOS-Project-Swift */,
+				83B2A7552EA6370500ACE935 /* Views */,
+				83B2A7512EA6365B00ACE935 /* ViewModels */,
+				83B2A7492EA6358900ACE935 /* Services */,
+				83B2A7452EA6353300ACE935 /* Models */,
+				83B2A70C2EA6321600ACE935 /* Assets.xcassets */,
+				83B2A70A2EA6321500ACE935 /* ContentView.swift */,
+				83B2A7082EA6321500ACE935 /* MVVM_IOS_Project_SwiftApp.swift */,
 				83B2A7062EA6321500ACE935 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +115,10 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				83B2A7072EA6321500ACE935 /* MVVM-IOS-Project-Swift */,
+				83B2A7452EA6353300ACE935 /* Models */,
+				83B2A7492EA6358900ACE935 /* Services */,
+				83B2A7512EA6365B00ACE935 /* ViewModels */,
+				83B2A7552EA6370500ACE935 /* Views */,
 			);
 			name = "MVVM-IOS-Project-Swift";
 			packageProductDependencies = (
@@ -109,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B2A70D2EA6321600ACE935 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B2A70B2EA6321500ACE935 /* ContentView.swift in Sources */,
+				83B2A7092EA6321500ACE935 /* MVVM_IOS_Project_SwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
